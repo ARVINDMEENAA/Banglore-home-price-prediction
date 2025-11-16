@@ -26,7 +26,7 @@ function onClickedEstimatePrice() {
   var location = document.getElementById("uiLocations");
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-  var url = "https://banglore-home-price-prediction-2.onrender.com/predict_home_price"; //Use this if you are NOT using nginx which is first 7 tutorials
+  var url = "https://banglore-home-price-prediction-g97w.onrender.com/predict_home_price"; //Use this if you are NOT using nginx which is first 7 tutorials
 
   $.post(url, {
       total_sqft: parseFloat(sqft.value),
@@ -42,7 +42,7 @@ function onClickedEstimatePrice() {
 
 function onPageLoad() {
   console.log( "document loaded" );
-   var url = "https://banglore-home-price-prediction-2.onrender.com/get_location_names"; // Use this if you are NOT using nginx which is first 7 tutorials
+   var url = "https://banglore-home-price-prediction-g97w.onrender.com/get_location_names"; // Use this if you are NOT using nginx which is first 7 tutorials
   $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
       if(data) {
